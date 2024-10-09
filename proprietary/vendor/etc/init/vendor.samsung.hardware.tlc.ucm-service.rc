@@ -1,0 +1,5 @@
+service tlc-ucm-hal-aidl /vendor/bin/hw/vendor.samsung.hardware.tlc.ucm-service
+    interface aidl vendor.samsung.hardware.tlc.ucm.ISehUcm/default
+    class hal
+    user system
+    group system

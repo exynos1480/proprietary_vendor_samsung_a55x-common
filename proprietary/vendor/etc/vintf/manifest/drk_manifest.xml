@@ -1,0 +1,9 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl" override="true">
+        <name>vendor.samsung.hardware.security.drk</name>
+        <interface>
+            <name>ISehDrk</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</manifest>

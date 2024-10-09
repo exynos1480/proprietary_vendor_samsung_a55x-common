@@ -1,0 +1,8 @@
+service rtts_hal /vendor/bin/vendor.samsung.hardware.security.rtts-service
+    class hal
+    user system
+    group system
+    disabled
+
+on property:vendor.security.vaultkeeper.native=1
+    start rtts_hal

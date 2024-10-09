@@ -1,0 +1,8 @@
+service wtasd /vendor/bin/wtasd
+    class main
+    user wifi
+    group wifi
+    seclabel u:r:wtasd:s0
+
+on post-fs-data
+    mkdir /data/vendor/wifi/tasd 0770 wifi system

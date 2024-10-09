@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HDR_MODULE_SPECIFIERS>
+    <hdr-module-specifier layer="0,2,3,4,5,6">
+        <gm-module-specifier>
+            <mod-en>gm-en</mod-en>
+            <coef-fmt>i,v,2,16,0</coef-fmt>
+            <coef>gm</coef>
+        </gm-module-specifier>
+    </hdr-module-specifier>
+    <hdr-module-specifier layer="1,7">
+        <tonemap-module-specifier>
+            <mod-en>tm-en</mod-en>
+            <mod-x>tm-x</mod-x>
+            <mod-y>tm-y</mod-y>
+            <mod-x-bit>27</mod-x-bit>
+            <mod-y-bit>20</mod-y-bit>
+            <mod-minx-bit>11</mod-minx-bit>
+            <mod-x-fmt>f,v,8,5,31</mod-x-fmt>
+            <mod-y-fmt>f,s,8,5,31</mod-y-fmt>
+        </tonemap-module-specifier>
+        <pq-module-specifier>
+            <mod-en>eotf-en</mod-en>
+            <pq-en>pq-en</pq-en>
+            <scaler-fmt>f,v,11,5,16</scaler-fmt>
+            <scaler>eotf-scaler</scaler>
+        </pq-module-specifier>
+        <eotf-module-specifier>
+            <mod-en>eotf-en</mod-en>
+            <mod-x>eotf-x</mod-x>
+            <mod-y>eotf-y</mod-y>
+            <mod-x-bit>10</mod-x-bit>
+            <mod-y-bit>16</mod-y-bit>
+            <mod-minx-bit>0</mod-minx-bit>
+            <mod-y-fmt>f,v,11,5,31</mod-y-fmt>
+        </eotf-module-specifier>
+        <gm-module-specifier>
+            <mod-en>gm-en</mod-en>
+            <coef-fmt>f,v,11,4,15</coef-fmt>
+            <coef>gm</coef>
+        </gm-module-specifier>
+    </hdr-module-specifier>
+</HDR_MODULE_SPECIFIERS>

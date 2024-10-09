@@ -1,0 +1,7 @@
+service vendor.enn-default /vendor/bin/hw/vendor.samsung_slsi.hardware.enn_aidl-service
+  interface aidl vendor.samsung_slsi.hardware.enn_aidl.IEnnInterfaceAidl/default
+  class hal
+  user system
+  group system
+  disabled
+  oneshot

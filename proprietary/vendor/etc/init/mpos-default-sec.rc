@@ -1,0 +1,7 @@
+service vendor.samsung.hardware.mpos-default /vendor/bin/hw/vendor.samsung.hardware.mpos-service
+    interface aidl vendor.samsung.hardware.mpos.ISehMpos/default
+    class hal
+    user system
+    group system
+    oneshot
+    disabled

@@ -1,0 +1,7 @@
+service vendor.graphics.allocator-default /vendor/bin/hw/android.hardware.graphics.allocator-aidl-service-sgr
+    class hal animation
+    user system
+    group graphics drmrpc
+    capabilities SYS_NICE
+    onrestart restart surfaceflinger
+
