@@ -8,34 +8,21 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/system/etc/audio_effects.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.xml \
     vendor/samsung/a55x-common/proprietary/system/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects_common.conf \
-    vendor/samsung/a55x-common/proprietary/system/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    vendor/samsung/a55x-common/proprietary/system/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/samsung/a55x-common/proprietary/system/lib64/libarcsoft_dualcam_portraitlighting.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_dualcam_portraitlighting.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libarcsoft_single_cam_glasses_seg.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_single_cam_glasses_seg.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libdatasource.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdatasource.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libdatasource_local_cache.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdatasource_local_cache.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libhdcp2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhdcp2.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libhdcp_client_aidl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libhdcp_client_aidl.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_codeclist.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmpbase.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libomafldrm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libomafldrm.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_aidl_bufferpool2.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_aidl_bufferpool2.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_codecbase.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_framecapture_utils.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_hdcp.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_hdcp.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_httplive_sec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_httplive_sec.so \
-    vendor/samsung/a55x-common/proprietary/system/lib64/libstagefright_surface_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_surface_utils.so \
     vendor/samsung/a55x-common/proprietary/system/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/bin/abox_log:$(TARGET_COPY_OUT_VENDOR)/bin/abox_log \
     vendor/samsung/a55x-common/proprietary/vendor/bin/add.tflite:$(TARGET_COPY_OUT_VENDOR)/bin/add.tflite \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/applypatch:$(TARGET_COPY_OUT_VENDOR)/bin/applypatch \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
     vendor/samsung/a55x-common/proprietary/vendor/bin/cbd:$(TARGET_COPY_OUT_VENDOR)/bin/cbd \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/checkpoint_gc:$(TARGET_COPY_OUT_VENDOR)/bin/checkpoint_gc \
     vendor/samsung/a55x-common/proprietary/vendor/bin/cld:$(TARGET_COPY_OUT_VENDOR)/bin/cld \
     vendor/samsung/a55x-common/proprietary/vendor/bin/dmd:$(TARGET_COPY_OUT_VENDOR)/bin/dmd \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/samsung/a55x-common/proprietary/vendor/bin/emservice:$(TARGET_COPY_OUT_VENDOR)/bin/emservice \
     vendor/samsung/a55x-common/proprietary/vendor/bin/epic:$(TARGET_COPY_OUT_VENDOR)/bin/epic \
     vendor/samsung/a55x-common/proprietary/vendor/bin/ffcirrus:$(TARGET_COPY_OUT_VENDOR)/bin/ffcirrus \
@@ -43,31 +30,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/bin/gperf:$(TARGET_COPY_OUT_VENDOR)/bin/gperf \
     vendor/samsung/a55x-common/proprietary/vendor/bin/gpu_counter_producer:$(TARGET_COPY_OUT_VENDOR)/bin/gpu_counter_producer \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hermesd:$(TARGET_COPY_OUT_VENDOR)/bin/hermesd \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.boot-service.exynos:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot-service.exynos \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.drm-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm-service.clearkey \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.graphics.allocator-aidl-service-sgr:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator-aidl-service-sgr \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.graphics.composer3-service.exynos:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer3-service.exynos \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.memtrack-service.exynos:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.exynos \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.neuralnetworks-service-enn:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks-service-enn \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.power.samsung-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.power.samsung-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors-service.multihal \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.usb-service.exynos:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb-service.exynos \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/android.hardware.wifi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/gpsd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/gpsd \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/macloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/macloader \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/mfgloader:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfgloader \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/samsung.hardware.media.c2@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/samsung.hardware.media.c2@1.2-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/samsung.software.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/samsung.software.media.c2@1.0-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/sec.android.hardware.nfc-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sec.android.hardware.nfc-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.authfw-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.authfw-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.face-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.camera.provider-service_64 \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.gnss-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.gnss-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.health-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.health-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.hyper-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.hyper-service \
@@ -89,10 +62,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.tlc.ucm-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.tlc.ucm-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.vibrator-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.vibrator-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung.hardware.wifi-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung.hardware.wifi-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.SbwcDecompService@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.SbwcDecompService@1.0-service \
     vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.enn_aidl-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.enn_aidl-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/vendor.samsung_slsi.hardware.epic-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.samsung_slsi.hardware.epic-service \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/samsung/a55x-common/proprietary/vendor/bin/iod:$(TARGET_COPY_OUT_VENDOR)/bin/iod \
     vendor/samsung/a55x-common/proprietary/vendor/bin/moredump:$(TARGET_COPY_OUT_VENDOR)/bin/moredump \
     vendor/samsung/a55x-common/proprietary/vendor/bin/moredump.bin:$(TARGET_COPY_OUT_VENDOR)/bin/moredump.bin \
@@ -101,8 +71,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/bin/snap_utility_64:$(TARGET_COPY_OUT_VENDOR)/bin/snap_utility_64 \
     vendor/samsung/a55x-common/proprietary/vendor/bin/snaplite_utility_64:$(TARGET_COPY_OUT_VENDOR)/bin/snaplite_utility_64 \
     vendor/samsung/a55x-common/proprietary/vendor/bin/test_model.json:$(TARGET_COPY_OUT_VENDOR)/bin/test_model.json \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/tzdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzdaemon \
-    vendor/samsung/a55x-common/proprietary/vendor/bin/tzts_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/tzts_daemon \
     vendor/samsung/a55x-common/proprietary/vendor/bin/utility_cache_test.tflite:$(TARGET_COPY_OUT_VENDOR)/bin/utility_cache_test.tflite \
     vendor/samsung/a55x-common/proprietary/vendor/bin/vaultkeeperd:$(TARGET_COPY_OUT_VENDOR)/bin/vaultkeeperd \
     vendor/samsung/a55x-common/proprietary/vendor/bin/vendor.samsung.hardware.security.engmode-service:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.samsung.hardware.security.engmode-service \
@@ -130,10 +98,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/beauty/settings.dat:$(TARGET_COPY_OUT_VENDOR)/etc/beauty/settings.dat \
     vendor/samsung/a55x-common/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/boringssl_self_test.no_zygote.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.no_zygote.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/boringssl_self_test.zygote32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote32.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/boringssl_self_test.zygote64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/btcon.json:$(TARGET_COPY_OUT_VENDOR)/etc/btcon.json \
     vendor/samsung/a55x-common/proprietary/vendor/etc/dax3_media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dax3_media_codecs_dolby_audio.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
@@ -197,30 +161,20 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/hyper/config_hyper_permission.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_hyper_permission.json \
     vendor/samsung/a55x-common/proprietary/vendor/etc/hyper/config_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/hyper/config_vendor.json \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init.insmod.vendor_dlkm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.vendor_dlkm.cfg \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.boot-service.exynos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.exynos.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.drm-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.clearkey.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks-service-enn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-service-enn.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.usb-service.exynos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-service.exynos.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.wifi-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/camera.unihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camera.unihal.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/cas-default-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cas-default-lazy.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/dmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmd.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/dumpstate-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dumpstate-default.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/emservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/emservice.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/enn-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/enn-lazy.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/epic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/epic.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/face-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/face-default-sec.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/hwc3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hwc3.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/hyper-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hyper-default-sec.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
@@ -234,11 +188,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.vendor.sysfw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sysfw.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/khdm-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/khdm-default-sec.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/lights-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-default-sec.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/mpos-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mpos-default-sec.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/pa_daemon_teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/pa_daemon_teegris.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/power-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power-default-sec.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/samsung.hardware.media.c2@1.2-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/samsung.software.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/samsung.software.media.c2@1.0-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/sec-nfc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec-nfc-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/snap_utility.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snap_utility.rc \
@@ -269,10 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.tlc.ucm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.ucm-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.wifi-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi-service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.SbwcDecompService@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.SbwcDecompService@1.0-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.epic-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.epic-service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor_flash_recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_flash_recovery.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wsm-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wsm-service.rc \
@@ -315,7 +264,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/nfc/sec_s3nsen6_hwreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nsen6_hwreg.bin \
     vendor/samsung/a55x-common/proprietary/vendor/etc/nfc/sec_s3nsen6_swreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nsen6_swreg.bin \
@@ -350,9 +298,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/saiv/swisp_1.0/db/denoise_model_e3000_832X1088X4_v9.4.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/swisp_1.0/db/denoise_model_e3000_832X1088X4_v9.4.nnc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/saiv/swisp_1.0/db/denoise_model_e3100_832X1088X4_v9.5.nnc:$(TARGET_COPY_OUT_VENDOR)/etc/saiv/swisp_1.0/db/denoise_model_e3100_832X1088X4_v9.5.nnc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/mediaextractor_sec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor_sec.policy \
     vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-base-policy \
     vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/samsung.software.media.c2-ext-policy \
@@ -466,8 +411,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/platform.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/platform.txt \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/slsi_reg_database.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wlan_common_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_common_rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wlan_vendor_rc:$(TARGET_COPY_OUT_VENDOR)/etc/wlan_vendor_rc \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AIE.bin \
@@ -621,35 +564,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/volctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volctrl.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/vts.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vts.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audioclient-types-aidl-cpp.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/audiopolicy-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/audiopolicy-types-aidl-cpp.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/av-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/av-types-aidl-cpp.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/egl/libEGL_samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/egl/libGLESv1_CM_samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/egl/libGLESv2_samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/framework-permission-aidl-cpp.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/gnss_aidl_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gnss_aidl_lib.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@2.0-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@7.0-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@2.0-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.audio@7.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.1-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.3-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.primary.s5e8845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.s5e8845.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.sec_primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.sec_primary.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/camera.s5e8845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.s5e8845.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/camera.unihal.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.unihal.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/sound_trigger.primary.s5e8845.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.s5e8845.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/hw/vulkan.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libAFSegmenter_v1.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAFSegmenter_v1.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libBeauty_v4.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBeauty_v4.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libBufferStats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBufferStats.so \
@@ -657,20 +576,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libDeviceInfoProvider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDeviceInfoProvider.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libEventFinder.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEventFinder.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libExtIRTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExtIRTA.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2ComponentStore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2ComponentStore.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2H264Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2H264Dec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2H264Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2H264Enc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2HevcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2HevcDec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2HevcEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2HevcEnc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2Vp8Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2Vp8Dec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2Vp8Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2Vp8Enc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2Vp9Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2Vp9Dec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosC2Vp9Enc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosC2Vp9Enc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libExynosHWCService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libExynosHWCService.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libFaceService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceService.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libFace_Landmark_API.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace_Landmark_API.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libFrucSSMLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrucSSMLib.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libHDRMetaGenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHDRMetaGenerator.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libHDRVerifier_v1.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHDRVerifier_v1.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libHandGesture.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHandGesture.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libHprFace_GAE_api.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHprFace_GAE_api.camera.samsung.so \
@@ -680,10 +589,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libIRTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libIRTA.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libLocalTM_capture_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_capture_core.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libLocalTM_wrapper.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libLocalTM_wrapper.camera.samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCv.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libPersonal_core.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libPersonal_core.camera.samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libSGPUOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSGPUOpenCL.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libSamsungPostProcessConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSamsungPostProcessConvertor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libSceneDetector_v1.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSceneDetector_v1.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libSecC2ComponentStore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecC2ComponentStore.so \
@@ -696,29 +603,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/lib_SoundBooster_ver2000.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_SoundBooster_ver2000.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/lib_profiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_profiler.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/lib_soundaliveresampler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_soundaliveresampler.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libacryl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacryl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libai_denoiser_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libai_denoiser_interface.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libaivideocentral.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaivideocentral.arcsoft.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libalsautils_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils_sec.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libarcsoft_dualcam_portraitlighting_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_portraitlighting_preview.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libaudio-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio-ril.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioclient_aidl_conversion.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libaudioparamupdate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioparamupdate.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libaudioproxy2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioproxy2.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libauto_framing_arcsoft.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libauto_framing_arcsoft.uniplugin@1.0.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libautotracking_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libautotracking_interface.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libbeautyshot.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeautyshot.arcsoft.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libbinderdebug.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinderdebug.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libbodyid.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbodyid.arcsoft.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera2ndk_vendor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdi.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcdi_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdi_wrapper.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.2.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl_plugin.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_aacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_aacdec.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_aacenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_aacenc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_amrnbdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_amrnbdec.so \
@@ -729,29 +622,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_mp4vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_mp4vdec.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_soft_common.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_sec_vc1dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_sec_vc1dec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_simple_component.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_simple_component.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ac4dec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_common.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodec2_soft_eac3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_eac3dec.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcodecsolutionhelper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodecsolutionhelper_vendor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcommon.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppbor_external.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcppcose_rkp.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libcrane_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrane_compiler.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcsc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libdeccfg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdeccfg.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libdisplaycolor_default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplaycolor_default.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libdk_vnd_service_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdk_vnd_service_core.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libdove_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdove_compiler.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libdrm_sgpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrm_sgpu.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libdrmresource.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmresource.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libdsms_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsms_vendor.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libdualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdualcam_refocus_video.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libeagle_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeagle_compiler.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libeis_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeis_core.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libeis_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeis_interface.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libeis_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeis_utils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libems_service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libems_service.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libengine_did.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengine_did.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libengmode15.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libengmode15.so \
@@ -777,66 +657,42 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libenn_user_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libenn_user_lib.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libenn_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libenn_wrapper.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libepic_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepic_helper.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepicoperator.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libevent_finder.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libevent_finder.uniplugin@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libexifa.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexifa.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynos_logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynos_logger.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynos_profiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynos_profiler.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynos_sensor_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynos_sensor_interface.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosdisplay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosdisplay.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosgdc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgdc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosgraphicbuffer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgraphicbuffer.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosgraphicbuffer_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosgraphicbuffer_core.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosscaler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosscaler.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosutils.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libexynosv4l2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynosv4l2.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libface_landmark.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface_landmark.arcsoft.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libfidoauthnr_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfidoauthnr_v2.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libfocuspeaking.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfocuspeaking.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libfocuspeaking.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfocuspeaking.uniplugin@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libformatConverter.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatConverter.unifunc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libgf_in_system_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgf_in_system_lib.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libgiantmscl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgiantmscl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libgmc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgmc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libgrallocusage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrallocusage.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libgraphgen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libgraphgen_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen_api.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhal.wsm.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhal.wsm.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhand_interaction.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhand_interaction.uniplugin@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhandgesture.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhandgesture.arcsoft.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhdr_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_plugin.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhdraid.gpu.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdraid.gpu.arcsoft.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhdraid.npu.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdraid.npu.arcsoft.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhdrwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrwrapper.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhermes.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhermes.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhermes_bdbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhermes_bdbridge.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhermes_cred.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhermes_cred.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhwjsqz.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjsqz.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhwvault.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwvault.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhyper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhyper.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhypermotion_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_core.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libhypermotion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypermotion_interface.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libhypervintf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhypervintf.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libimage_enhancement.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimage_enhancement.arcsoft.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libimagecodec_native.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagecodec_native.quram.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libimgproc_sw.unifunc@common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgproc_sw.unifunc@common.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libion_exynos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_exynos.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libipv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipv.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libir.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libisa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisa.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libisa_generator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisa_generator.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libisosechw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libisosechw.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libjpegencoder_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpegencoder_sw.unifunc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4_1support.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/liblastaboxmsg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblastaboxmsg.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/liblivefocus_capture_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_capture_engine.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/liblivefocus_preview_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_preview_engine.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/liblivefocus_preview_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblivefocus_preview_interface.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libmeminfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmeminfo.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libmultiobject_tracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmultiobject_tracker.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libncp_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libncp_wrapper.so \
@@ -845,7 +701,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/liboemservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemservice.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libpadm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpadm.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libpredeflicker_native.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpredeflicker_native.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libprofileparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprofileparamstorage.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libqfp_sensortest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqfp_sensortest.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/librecordalive.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librecordalive.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/librtts_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librtts_client.so \
@@ -856,14 +711,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsavsac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsac.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsavscmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavscmn.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsavsvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsavsvc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsbwchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsbwchelper.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsbwcwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsbwcwrapper.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libscaler_hw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscaler_hw.unifunc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libscaler_sw.unifunc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscaler_sw.unifunc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libscenedetector.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscenedetector.uniplugin@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsec2lsi_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec2lsi_conversion.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsec_skpmHalTlc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsec_skpmHalTlc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsecaudiocoreutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiocoreutils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsecaudioinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudioinfo.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsecaudiolevel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecaudiolevel.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsecfr_engine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecfr_engine.so \
@@ -875,13 +727,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsehbluetooth_audio_session_aidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsehbluetooth_audio_session_aidl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsemseg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemseg.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsfp_sensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfp_sensor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsfp_teegw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfp_teegw.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsfplugin_ccodec_utils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libshctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshctrl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemcompat.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshmemutil.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libshotsuggestion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshotsuggestion.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libshotsuggestion_engines.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libshotsuggestion_engines.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libskeymint10device.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskeymint10device.so \
@@ -895,21 +743,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsnaplite_native.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaplite_native.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsnaplite_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnaplite_wrapper.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsocial_image_enhancement.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsocial_image_enhancement.uniplugin@1.0.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoft_attestation_cert.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libspatializerparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspatializerparamstorage.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libspeakercalibration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeakercalibration.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsrib_CNNInterface.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsrib_CNNInterface.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsrib_humanaware_engine.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsrib_humanaware_engine.camera.samsung.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libssengine.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssengine.uniplugin@1.0.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libstagefright_aidl_bufferpool2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_aidl_bufferpool2.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferpool@2.0.1.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libstagefright_bufferqueue_helper_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_bufferqueue_helper_vendor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libstagefright_foundation_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation_vendor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_omx_vendor.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libstork_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstork_shared.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libtlc_comm_iccc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_comm_iccc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libtlc_direct_comm_iccc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlc_direct_comm_iccc.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libtvm_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtvm_runtime.so \
@@ -918,37 +761,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libucm_tlc_direct_comm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libucm_tlc_direct_comm.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libucm_tlc_tz_esecomm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libucm_tlc_tz_esecomm.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libuniapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniapi.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libuniplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuniplugin.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libuuid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libuuid.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libveriben_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libveriben_lib.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libvibratorutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvibratorutils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libvideobeauty.arcsoft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobeauty.arcsoft.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libvideobeauty.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobeauty.uniplugin@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libvideobeauty_capture.uniplugin@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobeauty_capture.uniplugin@1.0.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libvideobeauty_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideobeauty_interface.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libvkservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvkservice.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libvpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpl.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libwrappergps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwrappergps.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/libwsmd_functions.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwsmd_functions.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libz_stable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libz_stable.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/libzoomroi.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libzoomroi.samsung.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/nfc_nci_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci_sec.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/sensors.inputvirtual.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.inputvirtual.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/sensors.sensorhub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.sensorhub.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/service-listener-ext-aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/service-listener-ext-aidl-V1-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/shared-file-region-aidl-cpp.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libaudioeffectoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudioeffectoffload.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiosaplus_sec.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libhapticgenerator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhapticgenerator.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libmyspace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmyspace.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libsamsungSoundbooster_plus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libsamsungSoundbooster_plus.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/soundfx/libswspatializer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswspatializer.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/spatializer-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/spatializer-aidl-cpp.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/unihal_android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_android.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/unihal_cutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_cutils.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/unihal_entry.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unihal_entry.so \
@@ -962,7 +790,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.audio-V2-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth@2.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so \
@@ -988,7 +815,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.snap-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.snap-V2-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.sysinput-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.sysinput-V2-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal-V1-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.thermal@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.blockchain@1.0-impl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.blockchain@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so \
@@ -1000,14 +826,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.tlc.ucm-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.tlc.ucm-impl.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi-V1-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.hostapd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.hostapd-V1-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.nan-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.nan-V1-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.hardware.wifi.supplicant-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.wifi.supplicant-V1-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung.libcolor.custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.libcolor.custom.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.SbwcDecompService@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.SbwcDecompService@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.enn_aidl-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.enn_aidl-V1-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.epic-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.epic-V1-ndk.so \
-    vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.epic@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.epic@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so \
     vendor/samsung/a55x-common/proprietary/vendor/lib64/vintf-codecsolution-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vintf-codecsolution-V2-ndk.so \
     vendor/samsung/a55x-common/proprietary/vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf:$(TARGET_COPY_OUT_VENDOR)/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf \
@@ -1022,6 +844,45 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/saiv/swisp_1.0/db/SWISPNetVendor-timestamp:$(TARGET_COPY_OUT_VENDOR)/saiv/swisp_1.0/db/SWISPNetVendor-timestamp
 
 PRODUCT_PACKAGES += \
+    libdualcam_refocus_image \
+    libext2_uuid \
+    libteecl_aidl \
+    libEGL_samsung \
+    libGLESv1_CM_samsung \
+    libGLESv2_samsung \
+    android.hardware.bluetooth@1.0-impl \
+    camera.s5e8845 \
+    vulkan.samsung \
+    libHDRMetaGenerator \
+    libOpenCL \
+    libSGPUOpenCL \
+    libai_denoiser_interface \
+    libautotracking_interface \
+    libbodyid.arcsoft \
+    libdrm_sgpu \
+    libdualcam_refocus_video \
+    libeis_core \
+    libeis_interface \
+    libgpudataproducer \
+    libhdraid.gpu.arcsoft \
+    libhdraid.npu.arcsoft \
+    libhypermotion_core \
+    libhypermotion_interface \
+    liblivefocus_capture_engine \
+    liblivefocus_preview_engine \
+    liblivefocus_preview_interface \
+    libprofileparamstorage \
+    libsecaudiocoreutils \
+    libspatializerparamstorage \
+    libteecl \
+    libuniplugin \
+    libuuid \
+    libvideobeauty_interface \
+    libwifi-hal \
+    libzoomroi.samsung \
+    vendor.samsung.hardware.bluetooth.audio-impl \
+    vendor.samsung.hardware.thermal@1.0 \
+    vendor.samsung.libcolor.custom \
     com.samsung.android.authfw.ta.preload \
     com.samsung.android.biometrics.face.signed \
     com.samsung.android.biometrics.fingerprint.signed \
@@ -1029,12 +890,7 @@ PRODUCT_PACKAGES += \
     com.samsung.android.vital.signed \
     android.hardware.boot-service.exynos.xml \
     android.hardware.neuralnetworks-service-enn.xml \
-    android.hardware.sensors-multihal.xml \
     android.hardware.usb-service.exynos.xml \
-    android.hardware.wifi-service.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
-    bluetooth_audio.xml \
     dmd.xml \
     drk_manifest.xml \
     enn-default.xml \
@@ -1045,7 +901,6 @@ PRODUCT_PACKAGES += \
     iweaver_aidl_v2_manifest.xml \
     khdm-default-sec.xml \
     lights-default-sec.xml \
-    memtrack.xml \
     mpos-default-sec.xml \
     power-samsung.xml \
     sec-nfc-service.xml \
@@ -1070,4 +925,14 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.tlc.kg-manifest.xml \
     vendor.samsung.hardware.tlc.ucm-manifest.xml \
     vendor.samsung.hardware.vibrator-default.xml \
-    vendor.samsung.hardware.wifi-service.xml
+    vendor.samsung.hardware.wifi-service.xml \
+    android.hardware.bluetooth@1.1-service \
+    android.hardware.graphics.allocator-aidl-service-sgr \
+    android.hardware.graphics.composer3-service.exynos \
+    android.hardware.neuralnetworks-service-enn \
+    android.hardware.usb-service.exynos \
+    android.hardware.wifi-service \
+    vendor.samsung.hardware.camera.provider-service_64 \
+    vendor.samsung_slsi.hardware.epic-service \
+    tzdaemon \
+    tzts_daemon
