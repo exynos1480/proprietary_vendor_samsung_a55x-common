@@ -829,7 +829,7 @@
     </path>
 
     <path name="gain-recording-2nd-mic">
-        <ctl name="VTS DMIC GAIN MODE1" value="6168" />
+        <ctl name="VTS DMIC GAIN MODE1" value="1028" />
         <ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
     </path>
 

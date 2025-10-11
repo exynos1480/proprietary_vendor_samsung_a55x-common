@@ -2,15 +2,15 @@ service sec-camera-provider /vendor/bin/hw/vendor.samsung.hardware.camera.provid
     interface aidl android.hardware.camera.provider.ICameraProvider/internal/0
     class hal
     user cameraserver
-    group audio camera input drmrpc system media_rw sdcard_rw media vendor_secdir wakelock
+    group audio camera input drmrpc system media_rw sdcard_rw media wakelock
     ioprio rt 4
     capabilities SYS_NICE BLOCK_SUSPEND
     task_profiles HighPerformance CameraServiceCapacity
 
 on boot
-    mkdir /data/vendor/postprocess/ 0770 camera vendor_secdir
-    mkdir /data/vendor/postprocess/eraw/ 0770 camera vendor_secdir
-    mkdir /data/vendor/postprocess/native/ 0770 camera vendor_secdir
+    mkdir /data/vendor/postprocess/ 0770 camera camera
+    mkdir /data/vendor/postprocess/eraw/ 0770 camera camera
+    mkdir /data/vendor/postprocess/native/ 0770 camera camera
     setprop vendor.camera.ppp.erawtid 0
     setprop vendor.camera.ppp.nativetid 0
     setprop vendor.camera.ppp.erawstart 0

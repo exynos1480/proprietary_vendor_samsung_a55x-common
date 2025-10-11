@@ -1,3 +1,0 @@
-<config>
-  <allowed-vendor-apex package="com.samsung.android.camera.unihal" installerPackage="com.sec.android.app.samsungapps" />
-</config>
