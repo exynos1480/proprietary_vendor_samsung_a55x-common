@@ -1,7 +1,0 @@
-service vendor.authfw-default /vendor/bin/hw/vendor.samsung.hardware.authfw-service
-    interface aidl vendor.samsung.hardware.authfw.ISehAuthenticationFramework/default
-    class hal
-    user system
-    group system
-    oneshot
-    disabled

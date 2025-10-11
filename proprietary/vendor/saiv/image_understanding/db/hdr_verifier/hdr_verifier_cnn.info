@@ -1,8 +1,0 @@
-{
-    "version_id": "v1",
-   "pcmodel": "v1.19",
-   "compiler" : "enn-5.23.13.1",
-   "model_type" : "npu",
-   "precision" : "float16",
-   "model_path" : "/vendor/saiv/image_understanding/db/hdr_verifier/hdr_verifier_cnn.tflite"
-}

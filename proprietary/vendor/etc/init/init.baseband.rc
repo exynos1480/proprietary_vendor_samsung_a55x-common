@@ -17,7 +17,7 @@ on fs
     setprop vendor.cbd.partition radio
     setprop persist.vendor.cbd.btl_size 64
 
-service cpboot-daemon /vendor/bin/cbd -d -t ss310 -P by-name/${vendor.cbd.partition} -bm -mm -B umts_boot0 -D umts_ramdump0 -n /mnt/vendor/efs -o s -o v
+service cpboot-daemon /vendor/bin/cbd -d -t ss310 -P by-name/${vendor.cbd.partition} -bm -mm -B umts_boot0 -D umts_ramdump0 -n /mnt/vendor/efs -o s -o v -o m 
     class main
     user root
     group radio cache inet misc audio sdcard_rw log sdcard_r shell system

@@ -144,7 +144,7 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="can-swap-width-height" value="1" />
             <Feature name="bitrate-modes" value="VBR,CBR,CBR-FD" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
         </MediaCodec>
         <MediaCodec name="c2.exynos.h264.encoder.secure" type="wfd/avc">
@@ -161,7 +161,7 @@
             <Limit name="concurrent-instances" max="3" />
             <Feature name="can-swap-width-height" value="1" />
             <Feature name="bitrate-modes" value="VBR,CBR,CBR-FD" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
         </MediaCodec>
         <MediaCodec name="c2.exynos.hevc.encoder" type="video/hevc" >
@@ -179,7 +179,7 @@
             <Limit name="quality" range="0-100" default="57" />
             <Feature name="can-swap-width-height" value="1" />
             <Feature name="bitrate-modes" value="VBR,CBR,CBR-FD" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
             <Feature name="hdr-editing" />
         </MediaCodec>
@@ -198,7 +198,7 @@
             <Limit name="quality" range="0-100" default="57" />
             <Feature name="can-swap-width-height" value="1" />
             <Feature name="bitrate-modes" value="VBR,CBR,CBR-FD" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
             <Feature name="hdr-editing" />
         </MediaCodec>
@@ -215,7 +215,7 @@
             <Limit name="concurrent-instances" max="16" />
             <Feature name="can-swap-width-height" value="1" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
         </MediaCodec>
         <MediaCodec name="c2.exynos.vp9.encoder" type="video/x-vnd.on2.vp9" >
@@ -230,7 +230,7 @@
             <Limit name="performance-point-3840x2160" range="60" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="bitrate-modes" value="VBR,CBR" />
-            <Feature name="qp-bounds" />
+            <Feature name="video-minimum-quality" />
             <Feature name="encoding-statistics" />
         </MediaCodec>
     </Encoders>

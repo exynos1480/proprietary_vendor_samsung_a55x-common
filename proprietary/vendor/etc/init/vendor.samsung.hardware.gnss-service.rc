@@ -1,4 +1,9 @@
 service sec_gnss_service /vendor/bin/hw/vendor.samsung.hardware.gnss-service
+    override
     class main
     user system
     group system gps
+
+on property:dev.gnss.initializehal=ON
+    restart sec_gnss_service
+    setprop dev.gnss.initializehal ""
