@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    vendor/samsung/a55x-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/samsung/a55x-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
@@ -79,6 +80,106 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/wifi/init.insmod.wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/init.insmod.wifi.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/OD_V3.4.10_11_17_QVGA_ROSE_ENN_BGRA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V3.4.10_11_17_QVGA_ROSE_ENN_BGRA.nnc \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/OD_V3.5.3_06_12_VGA_ROSE_ENN_BGRA.nnc:$(TARGET_COPY_OUT_VENDOR)/firmware/OD_V3.5.3_06_12_VGA_ROSE_ENN_BGRA.nnc \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_1.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_10.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_10.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_101.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_101.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_102.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_102.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_103.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_103.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_104.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_104.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_105.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_105.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_106.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_106.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_107.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_107.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_108.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_108.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_109.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_109.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_11.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_11.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_110.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_110.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_111.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_111.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_112.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_112.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_114.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_114.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_115.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_115.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_116.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_116.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_117.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_117.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_118.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_118.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_119.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_119.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_12.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_12.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_120.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_120.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_121.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_121.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_122.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_122.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_123.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_123.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_124.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_124.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_125.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_125.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_126.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_126.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_127.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_127.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_13.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_13.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_16.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_16.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_17.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_17.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_18.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_18.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_19.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_19.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_2.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_20.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_21.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_21.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_22.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_22.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_23.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_23.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_24.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_24.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_26.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_26.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_27.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_27.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_3.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_32.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_32.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_34.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_34.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_36.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_36.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_39.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_39.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_4.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_41.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_41.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_45.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_45.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_46.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_46.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_49.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_49.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_5.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_5.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_51.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_51.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_52.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_52.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_53.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_53.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_54.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_54.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_55.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_55.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_56.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_56.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_57.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_57.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_58.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_58.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_59.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_59.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_64.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_64.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_65.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_65.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_66.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_66.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_68.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_68.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_69.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_69.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_7.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_70.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_70.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_71.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_71.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_72.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_72.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_73.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_73.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_74.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_74.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_75.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_75.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_76.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_76.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_77.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_77.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_78.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_78.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_79.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_79.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_8.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_8.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_80.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_80.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_81.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_81.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_82.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_82.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_84.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_84.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_85.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_85.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_86.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_86.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_87.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_87.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_88.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_88.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_89.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_89.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_9.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_9.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_90.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_90.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_91.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_91.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_92.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_92.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_93.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_93.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_94.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_94.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_95.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_95.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_96.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_96.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_97.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_97.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_98.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_98.bin \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/RTP_99.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/RTP_99.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/SoundAlive.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundAlive.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/abox_solution.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_solution.conf \
@@ -113,88 +214,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/spkamp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/spkamp.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/volctrl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volctrl.bin \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/bt/log-strings.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/bt/log-strings.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/common/log-strings.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/common/log-strings.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/btwl/btwl/moredump/btwl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/btwl/btwl/moredump/btwl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM0Plus.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM0Plus.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_dbg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_dbg.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_dwt.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_dwt.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_etm.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_etm.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_fpb.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_fpb.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_itm.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_itm.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_mpu.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_mpu.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_nvic.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_nvic.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_scs.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_scs.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_tpi.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM3_tpi.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_dbg.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_dbg.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_dwt.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_dwt.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_fpb.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_fpb.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_itm.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_itm.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_mpu.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_mpu.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_nvic.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_nvic.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_scs.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexM7_scs.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/cortexR7.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/cortexR7.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/moredump.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/moredump.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/moredump.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/moredump.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2bt/moredump/mb_ap2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2bt/moredump/mb_ap2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2wl/moredump/mb_ap2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_ap2wl/moredump/mb_ap2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_cp2bt/moredump/mb_cp2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_cp2bt/moredump/mb_cp2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_cp2wl/moredump/mb_cp2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_cp2wl/moredump/mb_cp2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu/pert/moredump/pert_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu/pert/moredump/pert_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pmu_conf/pmu_conf/moredump/pmu_conf_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pmu_conf/pmu_conf/moredump/pmu_conf_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2bt/moredump/mb_ap2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2bt/moredump/mb_ap2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2wl/moredump/mb_ap2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_ap2wl/moredump/mb_ap2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_cp2bt/moredump/mb_cp2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_cp2bt/moredump/mb_cp2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_cp2wl/moredump/mb_cp2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_cp2wl/moredump/mb_cp2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/peri/moredump/peri_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/peri/moredump/peri_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_gic/moredump/periph_gic_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_gic/moredump/periph_gic_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_int_ifc/moredump/periph_int_ifc_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_int_ifc/moredump/periph_int_ifc_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_scu/moredump/periph_scu_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/periph_scu/moredump/periph_scu_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/pert/moredump/pert_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/pert/moredump/pert_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/perw_diet/moredump/perw_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/perw_diet/moredump/perw_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/pp/perw_pri/moredump/perw_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/pp/perw_pri/moredump/perw_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_dwt/moredump/m3_periph_dwt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_dwt/moredump/m3_periph_dwt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_fpb/moredump/m3_periph_fpb_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_fpb/moredump/m3_periph_fpb_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_itm/moredump/m3_periph_itm_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_itm/moredump/m3_periph_itm_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_nvic/moredump/m3_periph_nvic_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/m3_periph_nvic/moredump/m3_periph_nvic_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2bt/moredump/mb_ap2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2bt/moredump/mb_ap2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2pmu/moredump/mb_ap2pmu_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2wl/moredump/mb_ap2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_ap2wl/moredump/mb_ap2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_apm2wlbt/moredump/mb_apm2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_cp2bt/moredump/mb_cp2bt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_cp2bt/moredump/mb_cp2bt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_cp2wl/moredump/mb_cp2wl_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_cp2wl/moredump/mb_cp2wl_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_gnss2wlbt/moredump/mb_gnss2wlbt_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_wlbt2abox/moredump/mb_wlbt2abox_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/mb_wlbt2chub/moredump/mb_wlbt2chub_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/perb/moredump/perb_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/perb/moredump/perb_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/pert/moredump/pert_registers.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/hardware/moredump/wpanpp/pert/moredump/pert_registers.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/hip_signals.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/hip_signals.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/hydra_config.sdb:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/hydra_config.sdb \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/id.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/id.txt \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/log-strings.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/log-strings.bin \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/mib_out.xml:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/mib_out.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/symbols.dbg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/symbols.dbg \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/unicli.dbg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/unicli.dbg \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/unitab.dbg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/unitab.dbg \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/univif.dbg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/univif.dbg \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/debug/wlan/xide_mib.dbg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/debug/wlan/xide_mib.dbg \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/hydra_config.sdb:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/hydra_config.sdb \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/build_id.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/build_id.txt \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140/wpal:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140/wpal \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_bt.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_bt.hcf \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_common.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_common.hcf \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_wlan.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan.hcf \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_wlan_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_sw.hcf \
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_wlan_t.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_t.hcf \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/mx140_wlan_t_sw.hcf:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/mx140_wlan_t_sw.hcf \
-    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/slsi_reg_database.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/slsi_reg_database.bin
+    vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/platform.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/platform.txt
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources_samsung \
@@ -297,6 +326,9 @@ PRODUCT_PACKAGES += \
     libsbwchelper \
     libsec-ril \
     libsec2lsi_conversion \
+    libsec_esek \
+    libsec_semHalTlc \
+    libsec_semRil \
     libsecaudiocoreutils \
     libsecaudioinfo \
     libsecaudiolevel \
@@ -313,6 +345,7 @@ PRODUCT_PACKAGES += \
     libskeymint_cli \
     libspatializerparamstorage \
     libspeakercalibration \
+    libspictrl \
     libsynaFpSensorTestNwd \
     libteecl \
     libtinyalsa_samsung \
