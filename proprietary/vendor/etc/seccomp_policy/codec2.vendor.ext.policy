@@ -40,7 +40,3 @@ unlinkat: 1
 # renderengine
 getcwd: 1
 bind: 1
-mkdirat: 1
-
-# libminijail
-uname: 1
