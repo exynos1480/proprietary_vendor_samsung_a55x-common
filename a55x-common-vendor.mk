@@ -13,9 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/Khronos/OpenCL/samsung.icd:$(TARGET_COPY_OUT_VENDOR)/etc/Khronos/OpenCL/samsung.icd \
     vendor/samsung/a55x-common/proprietary/vendor/etc/dqe/calib_data_colormode0_off.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_off.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/ems.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems.json \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/ems_parameter.json:$(TARGET_COPY_OUT_VENDOR)/etc/ems_parameter.json \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/epic.json:$(TARGET_COPY_OUT_VENDOR)/etc/epic.json \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.dcm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.dcm.cfg \
@@ -281,7 +278,6 @@ PRODUCT_PACKAGES += \
     libegis_fp_normal_sensor_test \
     libeis_core \
     libeis_utils \
-    libems_service \
     libengmode_client \
     libenn_common_utils \
     libenn_cpu_operators \
@@ -292,7 +288,6 @@ PRODUCT_PACKAGES += \
     libenn_user_driver_gpu_lib \
     libenn_user_driver_unified \
     libenn_user_lib \
-    libepic_helper \
     libepicoperator \
     libexynos_sensor_interface \
     libexynosdisplay \
@@ -305,7 +300,6 @@ PRODUCT_PACKAGES += \
     libfloatingfeature \
     libgf_in_system_lib \
     libgiantmscl \
-    libgmc \
     libhdrwrapper \
     libhermes \
     libhermes_bdbridge \
@@ -390,6 +384,7 @@ PRODUCT_PACKAGES += \
     hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
+    sec_c2_manifest_default0_1_2.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
@@ -398,7 +393,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     vendor.samsung.hardware.vibrator-default.xml \
     dmd \
-    epic \
     hermesd \
     android.hardware.gatekeeper-service \
     android.hardware.graphics.allocator-aidl-service-sgr \

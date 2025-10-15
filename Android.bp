@@ -492,15 +492,18 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libcutils",
+                "libion",
                 "libhidlbase",
                 "libcodec2",
                 "libcodec2_vndk",
                 "libsfplugin_ccodec_utils",
                 "libstagefright_xmlparser",
-                "libion",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -537,10 +540,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -577,10 +582,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -617,10 +624,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -657,10 +666,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -697,10 +708,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -737,10 +750,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -777,10 +792,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -817,10 +834,12 @@ cc_prebuilt_library_shared {
                 "libexynosv4l2",
                 "libhardware",
                 "libacryl",
+                "libion_exynos",
                 "libui",
                 "libexynosgraphicbuffer",
-                "libion_exynos",
+                "libepicoperator",
                 "libc++",
+                "libclang_rt.ubsan_standalone",
                 "libc",
                 "libm",
                 "libdl",
@@ -1652,30 +1671,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libems_service",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libems_service.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libengmode_client",
     owner: "samsung",
     strip: {
@@ -1958,30 +1953,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libepic_helper",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libepic_helper.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
             ],
         },
     },
@@ -2344,30 +2315,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgmc",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgmc.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
             ],
         },
     },
@@ -4665,6 +4612,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "sec_c2_manifest_default0_1_2.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "secaudiohalaidl_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml",
@@ -4745,30 +4701,6 @@ cc_prebuilt_binary {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "epic",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/epic",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
             ],
         },
     },
@@ -5046,18 +4978,20 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
             ],
             shared_libs: [
+                "android.hardware.media.c2@1.2",
                 "android.hardware.media.omx@1.0",
                 "libavservices_minijail",
                 "libbinder",
+                "libcodec2_hidl@1.2",
                 "libcodec2_vndk",
                 "libhidlbase",
+                "libhidltransport",
+                "libhwbinder",
                 "liblog",
                 "libstagefright_omx",
                 "libstagefright_xmlparser",
                 "libutils",
                 "libExynosC2ComponentStore",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.2",
                 "libc++",
                 "libc",
                 "libm",
