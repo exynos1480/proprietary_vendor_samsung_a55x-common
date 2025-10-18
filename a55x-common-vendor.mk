@@ -46,7 +46,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.security.hermes.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.security.hermes.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.vibrator-default.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
@@ -373,7 +372,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.security.hermes-V1-ndk \
     vendor.samsung.hardware.thermal-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
-    vendor.samsung.hardware.vibrator-V5-ndk \
     vendor.samsung.libcolor.custom \
     vendor.samsung_slsi.hardware.epic-V1-ndk \
     vendor.samsung_slsi.hardware.epic@1.0 \
@@ -391,7 +389,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio_manifest_2_34.xml \
     vendor.samsung.hardware.security.hermes.xml \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
-    vendor.samsung.hardware.vibrator-default.xml \
     dmd \
     hermesd \
     android.hardware.gatekeeper-service \
@@ -407,7 +404,6 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
     vendor.samsung.hardware.security.hermes-service \
-    vendor.samsung.hardware.vibrator-service \
     init.insmod \
     tzdaemon \
     tzts_daemon
