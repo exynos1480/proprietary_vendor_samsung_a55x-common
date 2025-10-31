@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.kdi.debug.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.kdi.debug.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.kdi.issuetracker.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.kdi.issuetracker.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init.insmod.vendor_dlkm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.vendor_dlkm.cfg \
+    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.boot-service.exynos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.exynos.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
@@ -222,6 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/platform.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/platform.txt
 
 PRODUCT_PACKAGES += \
+    android.hardware.boot-V1-ndk \
     android.hardware.graphics.composer@2.1-resources_samsung \
     android.hardware.graphics.composer@2.2-resources_samsung \
     android.hardware.graphics.extension.composer3-V1-ndk \
@@ -379,6 +381,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
+    android.hardware.boot-service.exynos.xml \
     hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
@@ -391,6 +394,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.sehradio_manifest_2_34.xml \
     dmd \
     hermesd \
+    android.hardware.boot-service.exynos \
     android.hardware.gatekeeper-service \
     android.hardware.graphics.allocator-aidl-service-sgr \
     android.hardware.graphics.composer3-service.exynos \
