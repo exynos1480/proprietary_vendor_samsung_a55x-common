@@ -10,7 +10,7 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.boot-V1-ndk",
+    name: "android.hardware.boot-V1-ndk.exynos",
     owner: "samsung",
     strip: {
         none: true,
@@ -18,7 +18,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.boot-V1-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.boot-V1-ndk.exynos.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -4584,15 +4584,6 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.boot-service.exynos.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot-service.exynos.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "hwc3.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/hwc3.xml",
@@ -4760,7 +4751,7 @@ cc_prebuilt_binary {
             shared_libs: [
                 "libbase",
                 "libbinder_ndk",
-                "android.hardware.boot-V1-ndk",
+                "android.hardware.boot-V1-ndk.exynos",
                 "libc++",
                 "libc",
                 "libm",
