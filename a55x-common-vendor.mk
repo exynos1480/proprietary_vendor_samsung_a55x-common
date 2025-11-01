@@ -223,7 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/firmware/wifi/platform.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi/platform.txt
 
 PRODUCT_PACKAGES += \
-    android.hardware.boot-V1-ndk \
+    android.hardware.boot-V1-ndk.exynos \
     android.hardware.graphics.composer@2.1-resources_samsung \
     android.hardware.graphics.composer@2.2-resources_samsung \
     android.hardware.graphics.extension.composer3-V1-ndk \
@@ -381,7 +381,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
-    android.hardware.boot-service.exynos.xml \
     hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
