@@ -1,0 +1,6 @@
+<manifest version="1.0" type="device">
+    <hal format="aidl">
+        <name>vendor.samsung_slsi.hardware.enn_aidl</name>
+        <fqname>IEnnInterfaceAidl/default</fqname>
+    </hal>
+</manifest>
