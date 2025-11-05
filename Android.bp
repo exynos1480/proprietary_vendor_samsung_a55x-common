@@ -5106,6 +5106,15 @@ dex_import {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.boot-service.exynos.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot-service.exynos.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "enn-default.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/enn-default.xml",

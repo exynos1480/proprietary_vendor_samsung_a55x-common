@@ -401,6 +401,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
+    android.hardware.boot-service.exynos.xml \
     enn-default.xml \
     hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
