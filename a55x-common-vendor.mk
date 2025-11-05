@@ -13,6 +13,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/Khronos/OpenCL/samsung.icd:$(TARGET_COPY_OUT_VENDOR)/etc/Khronos/OpenCL/samsung.icd \
     vendor/samsung/a55x-common/proprietary/vendor/etc/dqe/calib_data_colormode0_off.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_off.xml \
+    vendor/samsung/a55x-common/proprietary/vendor/etc/enn/custom_mode_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/enn/custom_mode_config.json \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.dcm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.dcm.cfg \
@@ -271,21 +272,29 @@ PRODUCT_PACKAGES += \
     libaudioparamupdate \
     libaudioproxy2 \
     libaudioroute_samsung \
+    libcdi \
+    libcdi_wrapper \
+    libcommon \
+    libcrane_compiler \
     libcsc \
     libdisplaycolor_default \
+    libdove_compiler \
     libdrm_sgpu \
     libdrmresource \
     libdualcam_refocus_video \
+    libeagle_compiler \
     libegis_fp_normal_sensor_test \
     libeis_core \
     libeis_utils \
     libengmode_client \
     libenn_common_utils \
     libenn_cpu_operators \
+    libenn_engine \
     libenn_engine_lib \
     libenn_model \
     libenn_public_api_cpp_lib \
     libenn_user_driver_cpu \
+    libenn_user_driver_gpu \
     libenn_user_driver_gpu_lib \
     libenn_user_driver_unified \
     libenn_user_lib \
@@ -301,6 +310,8 @@ PRODUCT_PACKAGES += \
     libfloatingfeature \
     libgf_in_system_lib \
     libgiantmscl \
+    libgraphgen \
+    libgraphgen_api \
     libhdrwrapper \
     libhermes \
     libhermes_bdbridge \
@@ -309,12 +320,19 @@ PRODUCT_PACKAGES += \
     libhwjsqz \
     libhwvault \
     libion_exynos \
+    libipv \
+    libir \
+    libisa \
+    libisa_generator \
     libisosechw \
     liblastaboxmsg \
     libmpbase \
+    libncp_wrapper \
+    libnpu_compiler \
     libprofileparamstorage \
     libqfp_sensortest \
     libril_sem \
+    libsait_npu_compiler \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
     libsamsungcamerahwl_impl \
@@ -347,6 +365,7 @@ PRODUCT_PACKAGES += \
     libuniapi \
     libuniplugin \
     libuuid_vendor \
+    libveriben_lib \
     libvkmanager_vendor \
     libvpl \
     libwrappergps \
@@ -375,12 +394,14 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.thermal-V1-ndk \
     vendor.samsung.hardware.thermal@1.0 \
     vendor.samsung.libcolor.custom \
+    vendor.samsung_slsi.hardware.enn_aidl-V1-ndk \
     vendor.samsung_slsi.hardware.epic-V1-ndk \
     vendor.samsung_slsi.hardware.epic@1.0 \
     com.google.android.widevine.nonupdatable \
     HotwordEnrollmentOKGoogleEx4CORTEXM4 \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
+    enn-default.xml \
     hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
@@ -397,6 +418,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper-service \
     android.hardware.graphics.allocator-aidl-service-sgr \
     android.hardware.graphics.composer3-service.exynos \
+    android.hardware.neuralnetworks-service-enn \
     android.hardware.security.keymint-service.samsung \
     gps \
     gpsd_K44 \
@@ -407,6 +429,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.camera.provider-service_64 \
     vendor.samsung.hardware.gnss-service \
     vendor.samsung.hardware.security.hermes-service \
+    vendor.samsung_slsi.hardware.enn_aidl-service \
     init.insmod \
     tzdaemon \
     tzts_daemon
