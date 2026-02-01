@@ -26,11 +26,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/gnss/gps.kdi.issuetracker.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.kdi.issuetracker.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init.insmod.vendor_dlkm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.vendor_dlkm.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.boot-service.exynos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.exynos.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/dmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmd.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/hwc3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hwc3.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.exynos.wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos.wifi.rc \
