@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.sensorhub.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.sensorhub.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.vendor.onebinary.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.onebinary.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/samsung.hardware.media.c2@1.2-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/sec-nfc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sec-nfc-service.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/secaudiohalaidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secaudiohalaidl.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/teegris.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris.rc \
@@ -51,9 +50,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/wifi_slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_slsi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/samsung/a55x-common/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_default.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_gray.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_gray.xml \
     vendor/samsung/a55x-common/proprietary/vendor/etc/mixer_usb_white.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_usb_white.xml \
@@ -66,8 +62,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/a55x-common/proprietary/vendor/etc/plmn_se13_prebuilt.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13_prebuilt.bin \
     vendor/samsung/a55x-common/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     vendor/samsung/a55x-common/proprietary/vendor/etc/secnvm/k250a_41000001_1.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000001_1.img \
     vendor/samsung/a55x-common/proprietary/vendor/etc/secnvm/k250a_41000003_0.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000003_0.img \
     vendor/samsung/a55x-common/proprietary/vendor/etc/secnvm/k250a_41000005_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000005_c.img \
@@ -235,15 +229,6 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.s5e8845 \
     vulkan.samsung \
     libExtIRTA \
-    libExynosC2ComponentStore \
-    libExynosC2H264Dec \
-    libExynosC2H264Enc \
-    libExynosC2HevcDec \
-    libExynosC2HevcEnc \
-    libExynosC2Vp8Dec \
-    libExynosC2Vp8Enc \
-    libExynosC2Vp9Dec \
-    libExynosC2Vp9Enc \
     libIRTA \
     libOpenCL \
     libSGPUOpenCL \
@@ -281,10 +266,7 @@ PRODUCT_PACKAGES += \
     libenn_user_lib \
     libepicoperator \
     libexynos_sensor_interface \
-    libexynosgdc \
     libexynosscaler \
-    libexynosutils \
-    libexynosv4l2 \
     libfloatingfeature \
     libgf_in_system_lib \
     libgiantmscl \
@@ -370,7 +352,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.exynos.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
-    sec_c2_manifest_default0_1_2.xml \
     secaudiohalaidl_manifest.xml \
     vendor.samsung.hardware.camera.provider-service.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
@@ -385,7 +366,6 @@ PRODUCT_PACKAGES += \
     gps \
     gpsd_K44 \
     rild \
-    samsung.hardware.media.c2@1.2-service \
     sec.android.hardware.nfc-service \
     secaudiohalaidl \
     vendor.samsung.hardware.camera.provider-service_64 \
