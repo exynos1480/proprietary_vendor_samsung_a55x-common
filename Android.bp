@@ -6,6 +6,9 @@ soong_namespace {
     imports: [
         "device/samsung/a55x-common",
         "hardware/samsung",
+        "hardware/samsung_slsi-linaro/exynos",
+        "hardware/samsung_slsi-linaro/graphics",
+        "hardware/samsung_slsi-linaro/sgpu",
     ],
 }
 
@@ -19,90 +22,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/android.hardware.boot-V1-ndk.exynos.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.composer@2.1-resources_samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.1-resources_samsung.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.composer@2.1",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.composer@2.2-resources_samsung",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.composer@2.2-resources_samsung.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.composer@2.1-resources_samsung",
-                "android.hardware.graphics.composer@2.2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.extension.composer3-V1-ndk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.extension.composer3-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -250,42 +169,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@4.0-impl-sgr",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-sgr.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeis_utils",
-                "libgralloctypes",
-                "libhardware",
-                "libhidlbase",
-                "libion_exynos",
-                "liblog",
-                "libutils",
-                "android.hardware.graphics.mapper@4.0",
-                "libsync",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
     prefer: true,
     soc_specific: true,
 }
@@ -877,41 +760,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libExynosHWCService",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libExynosHWCService.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "libexynosdisplay",
-                "libacryl",
-                "libui",
-                "libion",
-                "android.hardware.graphics.composer3-V2-ndk",
-                "libhdrwrapper",
-                "libdisplaycolor_default",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libIRTA",
     owner: "samsung",
     strip: {
@@ -1269,34 +1117,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libacryl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libacryl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libion_exynos",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libalsautils_sec",
     owner: "samsung",
     strip: {
@@ -1535,60 +1355,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdrm_sgpu",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdrm_sgpu.so",
-            ],
-            shared_libs: [
-                "libdrm",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdrmresource",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdrmresource.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libdrm",
-                "liblog",
-                "libutils",
-                "libhardware",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdualcam_refocus_video",
     owner: "samsung",
     strip: {
@@ -1657,32 +1423,6 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libexynosutils",
                 "libion_exynos",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libeis_utils",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libeis_utils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -2045,50 +1785,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libexynosdisplay",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libexynosdisplay.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware",
-                "libhardware_legacy",
-                "libutils",
-                "libsync",
-                "libacryl",
-                "libui",
-                "libion_exynos",
-                "libion",
-                "libexynosgraphicbuffer",
-                "libdrmresource",
-                "libdrm",
-                "android.hardware.graphics.composer3-V2-ndk",
-                "android.hardware.common-V2-ndk",
-                "libbinder_ndk",
-                "libjsoncpp",
-                "libbase",
-                "libhdrwrapper",
-                "libdisplaycolor_default",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libexynosgdc",
     owner: "samsung",
     strip: {
@@ -2105,75 +1801,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libexynosv4l2",
                 "libexynosutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libexynosgraphicbuffer",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libexynosgraphicbuffer.so",
-            ],
-            shared_libs: [
-                "libshim_ui",
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libgralloctypes",
-                "libhidlbase",
-                "libui",
-                "android.hardware.graphics.allocator@2.0",
-                "android.hardware.graphics.allocator@3.0",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libion_exynos",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libexynosgraphicbuffer_core",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libexynosgraphicbuffer_core.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libgralloctypes",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -2553,32 +2180,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libion_exynos",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_exynos.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libisosechw",
     owner: "samsung",
     strip: {
@@ -2862,37 +2463,6 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libfmq",
                 "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsbwchelper",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsbwchelper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "liblog",
-                "libnativewindow",
-                "libbase",
-                "libexynosgraphicbuffer_core",
                 "libc++",
                 "libc",
                 "libm",
@@ -4628,15 +4198,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "hwc3.xml",
-    owner: "samsung",
-    src: "proprietary/vendor/etc/vintf/manifest/hwc3.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "iweaver_aidl_v2_manifest.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/iweaver_aidl_v2_manifest.xml",
@@ -4829,85 +4390,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.graphics.allocator-aidl-service-sgr",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.graphics.allocator-aidl-service-sgr",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libeis_utils",
-                "libgralloctypes",
-                "libhardware",
-                "libhidlbase",
-                "libion_exynos",
-                "liblog",
-                "libutils",
-                "android.hardware.graphics.allocator-V1-ndk",
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.graphics.composer3-service.exynos",
-    owner: "samsung",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.graphics.composer3-service.exynos",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.composer@2.1-resources_samsung",
-                "android.hardware.graphics.composer@2.2-resources_samsung",
-                "android.hardware.graphics.composer3-V2-ndk",
-                "android.hardware.graphics.extension.composer3-V1-ndk",
-                "libbase",
-                "libbinder",
-                "libbinder_ndk",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libjsoncpp",
-                "liblog",
-                "libutils",
-                "libui",
-                "libprocessgroup",
-                "libexynosdisplay",
-                "libExynosHWCService",
-                "libdisplaycolor_default",
                 "libc++",
                 "libc",
                 "libm",

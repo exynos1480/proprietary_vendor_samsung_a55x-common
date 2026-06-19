@@ -26,11 +26,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init.insmod.vendor_dlkm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.vendor_dlkm.cfg \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.boot-service.exynos.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot-service.exynos.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-aidl-service-sgr.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.samsung.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/dmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmd.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/hermesd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hermesd.rc \
-    vendor/samsung/a55x-common/proprietary/vendor/etc/init/hwc3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hwc3.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.baseband.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.baseband.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.exynos.wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.exynos.wifi.rc \
     vendor/samsung/a55x-common/proprietary/vendor/etc/init/init.fingerprint.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fingerprint.rc \
@@ -225,15 +223,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.boot-V1-ndk.exynos \
-    android.hardware.graphics.composer@2.1-resources_samsung \
-    android.hardware.graphics.composer@2.2-resources_samsung \
-    android.hardware.graphics.extension.composer3-V1-ndk \
     android.weaver@1.0 \
     libEGL_samsung \
     libGLESv1_CM_samsung \
     libGLESv2_samsung \
     gnss_aidl_lib \
-    android.hardware.graphics.mapper@4.0-impl-sgr \
     audio.primary.s5e8845 \
     audio.sec_primary.default \
     gatekeeper.s5e8845 \
@@ -250,7 +244,6 @@ PRODUCT_PACKAGES += \
     libExynosC2Vp8Enc \
     libExynosC2Vp9Dec \
     libExynosC2Vp9Enc \
-    libExynosHWCService \
     libIRTA \
     libOpenCL \
     libSGPUOpenCL \
@@ -265,7 +258,6 @@ PRODUCT_PACKAGES += \
     lib_SoundBooster_ver2000 \
     lib_profiler \
     lib_soundaliveresampler \
-    libacryl \
     libalsautils_sec \
     libarcsoft_dualcam_portraitlighting_preview \
     libaudio-ril \
@@ -274,12 +266,9 @@ PRODUCT_PACKAGES += \
     libaudioroute_samsung \
     libcsc \
     libdisplaycolor_default \
-    libdrm_sgpu \
-    libdrmresource \
     libdualcam_refocus_video \
     libegis_fp_normal_sensor_test \
     libeis_core \
-    libeis_utils \
     libengmode_client \
     libenn_common_utils \
     libenn_cpu_operators \
@@ -292,10 +281,7 @@ PRODUCT_PACKAGES += \
     libenn_user_lib \
     libepicoperator \
     libexynos_sensor_interface \
-    libexynosdisplay \
     libexynosgdc \
-    libexynosgraphicbuffer \
-    libexynosgraphicbuffer_core \
     libexynosscaler \
     libexynosutils \
     libexynosv4l2 \
@@ -309,7 +295,6 @@ PRODUCT_PACKAGES += \
     libhwjpeg \
     libhwjsqz \
     libhwvault \
-    libion_exynos \
     libisosechw \
     liblastaboxmsg \
     libmpbase \
@@ -319,7 +304,6 @@ PRODUCT_PACKAGES += \
     libsamsungcamerahal \
     libsamsungcamerahalutils \
     libsamsungcamerahwl_impl \
-    libsbwchelper \
     libsec-ril \
     libsec2lsi_conversion \
     libsec_esek \
@@ -384,7 +368,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleEx4CORTEXM4 \
     com.android.hotwordenrollment.common.util \
     android.hardware.boot-service.exynos.xml \
-    hwc3.xml \
     iweaver_aidl_v2_manifest.xml \
     sec-nfc-service.xml \
     sec_c2_manifest_default0_1_2.xml \
@@ -398,8 +381,6 @@ PRODUCT_PACKAGES += \
     hermesd \
     android.hardware.boot-service.exynos \
     android.hardware.gatekeeper-service \
-    android.hardware.graphics.allocator-aidl-service-sgr \
-    android.hardware.graphics.composer3-service.exynos \
     android.hardware.security.keymint-service.samsung \
     gps \
     gpsd_K44 \
