@@ -4,7 +4,7 @@
 
 soong_namespace {
     imports: [
-        "device/samsung/a55x-common",
+        "device/samsung/a55x",
         "hardware/samsung",
         "hardware/samsung_slsi-linaro/exynos",
         "hardware/samsung_slsi-linaro/graphics",
@@ -229,6 +229,69 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libspeakercalibration",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "camera.s5e8845",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/camera.s5e8845.so",
+            ],
+            shared_libs: [
+                "libui_shim",
+                "libutils",
+                "libhardware",
+                "libcutils",
+                "libbase",
+                "liblog",
+                "libui",
+                "libcamera_metadata",
+                "libutilscallstack",
+                "libexynosutils",
+                "libhwjpeg",
+                "libexynosv4l2",
+                "libion",
+                "libion_exynos",
+                "libsync",
+                "libcsc",
+                "libexynosgraphicbuffer",
+                "libsensorndkbridge",
+                "libIRTA",
+                "libepicoperator",
+                "libfloatingfeature",
+                "libvpl",
+                "libexpat",
+                "libsemseg",
+                "libuniapi",
+                "libuniplugin",
+                "libsensorlistener",
+                "libsecril-client",
+                "libhypervintf",
+                "libbinder",
+                "libsecnativefeature",
+                "vendor.samsung.hardware.thermal@1.0",
+                "libhidlbase",
+                "vendor.samsung.hardware.thermal-V1-ndk",
+                "android.hardware.thermal-V1-ndk",
+                "libbinder_ndk",
+                "libhwjsqz",
+                "libsec2lsi_conversion",
                 "libc++",
                 "libc",
                 "libm",
@@ -1063,6 +1126,36 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libeis_interface",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libeis_interface.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libui",
+                "liblog",
+                "libcutils",
+                "libuniplugin",
+                "libeis_core",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libengmode_client",
     owner: "samsung",
     strip: {
@@ -1842,6 +1935,35 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librecordalive",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librecordalive.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "lib_SamsungRec_07010",
+                "libsecaudioinfo",
                 "libc++",
                 "libc",
                 "libm",
@@ -2683,6 +2805,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstork_shared",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstork_shared.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsynaFpSensorTestNwd",
     owner: "samsung",
     strip: {
@@ -2842,6 +2989,34 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libcutils",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvkservice",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvkservice.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libstork_shared",
+                "libteecl",
                 "libc++",
                 "libc",
                 "libm",
@@ -3054,6 +3229,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libaudiosaplus_sec",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libaudioutils",
+                "lib_SoundAlive_play_plus_ver600",
+                "lib_SoundAlive_AlbumArt_ver105",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmyspace",
     owner: "samsung",
     strip: {
@@ -3070,6 +3276,101 @@ cc_prebuilt_library_shared {
                 "lib_SoundAlive_3DPosition_ver202",
                 "liblog",
                 "libaudioutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsamsungSoundbooster_plus",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libsamsungSoundbooster_plus.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "lib_SoundBooster_ver2000",
+                "libsecaudioinfo",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdap",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswdap.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libprofileparamstorage",
+                "libspatializerparamstorage",
+                "libsecaudiocoreutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswspatializer",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswspatializer.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libprofileparamstorage",
+                "libspatializerparamstorage",
+                "spatializer-aidl-cpp",
+                "libsecaudiocoreutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -3555,6 +3856,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.samsung.hardware.security.vaultkeeper-V1-ndk",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.samsung.hardware.security.vaultkeeper-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.thermal-V1-ndk",
     owner: "samsung",
     strip: {
@@ -3798,6 +4124,15 @@ prebuilt_etc_xml {
     name: "vendor.samsung.hardware.security.hermes.xml",
     owner: "samsung",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.security.hermes.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
+    owner: "samsung",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.samsung.hardware.security.vaultkeeper-manifest.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -4285,15 +4620,71 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+cc_prebuilt_binary {
+    name: "vaultkeeperd",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vaultkeeperd",
+            ],
+            shared_libs: [
+                "libdsms_vendor",
+                "libvkservice",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.samsung.hardware.security.vaultkeeper-service",
+    owner: "samsung",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/vendor.samsung.hardware.security.vaultkeeper-service",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libbase",
+                "libutils",
+                "libcutils",
+                "libhardware",
+                "libhidlbase",
+                "libbinder",
+                "vendor.samsung.hardware.security.vaultkeeper-V1-ndk",
+                "libvkmanager_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
 install_symlink {
     name: "vendor_Khronos_OpenCL_vendors_samsung_icd",
     soc_specific: true,
     installed_location: "Khronos/OpenCL/vendors/samsung.icd",
     symlink_target: "/vendor/etc/Khronos/OpenCL/samsung.icd",
-}
-
-cc_library_shared {
-    name: "librecordalive",
-    compile_multilib: "64",
-    soc_specific: true,
 }
