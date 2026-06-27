@@ -80,9 +80,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x/proprietary/vendor/etc/sec_audio_volume_curve.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sec_audio_volume_curve.xml \
     vendor/samsung/a55x/proprietary/vendor/etc/secnvm/k250a_41000001_1.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000001_1.img \
     vendor/samsung/a55x/proprietary/vendor/etc/secnvm/k250a_41000003_0.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000003_0.img \
-    vendor/samsung/a55x/proprietary/vendor/etc/secnvm/k250a_41000005_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000005_c.img \
+    vendor/samsung/a55x/proprietary/vendor/etc/secnvm/k250a_41000006_c.img:$(TARGET_COPY_OUT_VENDOR)/etc/secnvm/k250a_41000006_c.img \
     vendor/samsung/a55x/proprietary/vendor/etc/sound_trigger_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_info.xml \
-    vendor/samsung/a55x/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/a55x/proprietary/vendor/etc/wifi/init.insmod.wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/init.insmod.wifi.cfg \
     vendor/samsung/a55x/proprietary/vendor/firmware/A556BXXSABYI1/AIE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/A556BXXSABYI1/AIE.bin \
     vendor/samsung/a55x/proprietary/vendor/firmware/A556BXXSABYI1/calliope_sram.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/A556BXXSABYI1/calliope_sram.bin \

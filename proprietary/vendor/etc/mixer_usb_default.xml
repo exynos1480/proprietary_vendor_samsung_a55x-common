@@ -162,6 +162,11 @@
         <ctl name="Headset Capture Volume" value="91" />
     </path>
 
+    <!-- performance Input paths -->
+    <path name="performance-usb-headset-mic-gain">
+        <ctl name="Headset Capture Volume" value="120" />
+    </path>
+
     <!-- Recognition Input paths -->
     <path name="recognition-usb-headset-mic-gain">
         <ctl name="Headset Capture Volume" value="120" />

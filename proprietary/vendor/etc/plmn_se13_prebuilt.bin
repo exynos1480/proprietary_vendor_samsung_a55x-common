@@ -112,6 +112,10 @@ TELEKOM.RO"TELEKOM
 22802Sunrise"Sunrise
 
 22803Salt"Salt
+
+22872SolNet"SolNet
+
+22874net+"net+
 
 23001T-Mobile CZ"TMO CZ
 
@@ -231,6 +235,8 @@ Telenor SE"TelenorS
 25001MTS RUS"MTS RUS
 
 25002MegaFon"MegaFon
+
+25016MIATEL"miatel
 
 25027LETAI"LETAI
 "
@@ -268,8 +274,8 @@ Beeline UA"Beeline
 26003	Orange PL"Orange
 
 26006Play"Play
-+
-26201Telekom Deutschland GER"Telekom
+'
+26201Telekom Deutschland"Telekom
  
 26202vodafone.de"Vodafone
 
@@ -278,19 +284,15 @@ Beeline UA"Beeline
 26207o2 - de"o2 - de
 
 262231&1"1&1
-
-2620231&1"1&1
 
 26601GIBTEL"GIBTEL
-
-26603GIBFIBRE"GIBFIBRE
 
 26801
 vodafone P"voda P
 
-26806MEO"MEO
+26803NOS"NOS
 
-26893NOS"NOS
+26806MEO"MEO
 
 27001POST"POST
 
@@ -334,8 +336,8 @@ IS OnWaves"OnWaves
 28020PrimeTel PLC"PrimeTel
 
 28022Cablenet"Cablenet
-
-28201	GEO-GCELL"GCELL
+
+28201	GEO-GCELL"GEOCELL
 
 28202MAGTI-GSM-GEO"MAGTI
 
@@ -483,6 +485,8 @@ SPM AMERIS"AMERIS
 310380AT&T"AT&T
 
 310410AT&T"AT&T
+"
+310420World Mobile"World Mo
 #
 310450Viaero Wireless"Viaero
 
@@ -601,6 +605,8 @@ NetGenuity"NetGenui
 334050AT&T"AT&T
 
 334070AT&T"AT&T
+
+334240Movistar"TEMM
 
 338050Digicel"Digicel
 
@@ -1099,8 +1105,6 @@ $
 45419CSL"CSL
 
 45420CSL"CSL
- 
-45500SmarTone MAC"SMC MAC
 
 45501CTM"CTM
 
@@ -1119,12 +1123,12 @@ $
 45608Metfone"Metfone
 
 45701LAO GSM"LAO GSM
-%
-45702ETL MOBILE NETWORK"ETLMNW
+
+45702BEST TELECOM"BEST
 
 45703Unitel"UNITEL
-"
-45707Best Telecom Laos"Best
+
+45707BEST TELECOM"BEST
 
 46000CHINA MOBILE"CMCC
 
@@ -1145,6 +1149,8 @@ CHN-UNICOM"UNICOM
 CHN-UNICOM"UNICOM
 
 46011CHN-CT"CT
+
+46015CHINA BROADNET"CBN
 
 46601Far EasTone"FET
 
@@ -1188,11 +1194,15 @@ Banglalink"BL
 
 50212MY MAXIS"MY MAXIS
 
-50213MY CELCOM 3G"CELCOM
+50213MY CelcomDigi"MY CD
+
+50216MY CelcomDigi"MY CD
 
 50218U MOBILE"U MOBILE
-
-50219	MY CELCOM"CELCOM
+
+50219MY CelcomDigi"MY CD
+
+502150TT"TT
 
 502152YES"YES
 
@@ -1340,6 +1350,8 @@ CK KOKANET"KOKANET
 60204EGYwe"we
 
 60301ALG Mobilis"Mobilis
+
+60302DJEZZY"DJEZZY
 
 60400	Orange MA"Orange
 
@@ -1357,6 +1369,8 @@ OOREDOO TN"OOREDOO
 60702AFRICELL"AFRICELL
 
 60704Qcell"QC
+
+60801XXXXXXXXXXXX"Orange
 
 60802SEN"Free
 
@@ -1397,8 +1411,14 @@ AirtelTigo"ATL-TIGO
 62150Glo NG"glo
 
 62402	Orange CM"Orange
+!
+62403CAMTEL or blue"CAMTEL
+!
+62405CAMTEL or blue"CAMTEL
 
 62501ALOU"ALOU
+
+62502	Unitel T+"UnitelT+
 
 62701GETESA"GETESA
 
@@ -1442,14 +1462,19 @@ SO Telesom"Tele
 63903Airtel"Airtel
 
 63910FAIBA"FAIBA
-
-64002	TIGO - TZ"TIGO
+
+64002Yas - TZ"YAS
+
+64003Yas - TZ"YAS
 
 64004VodaCom"VodaCom
 
 64005Airtel"Airtel
 
 64104UG TANG"TANG
+
+64110
+MTN-UGANDA"MTN_UG
 
 64111Uganda Telecom"UTL
 
@@ -1540,6 +1565,10 @@ TelkomSA-R"Telkom-R
 
 71615Viettel Peru"VTP
 
+72207Movistar"Movistar
+
+722010Movistar"Tuenti
+
 72234AR PERSONAL"AR TP
 
 72236AR PERSONAL"AR TP
@@ -1593,8 +1622,8 @@ TelkomSA-R"Telkom-R
 73601VIVA"VIVA
 
 73602BOMOV"EMOVIL
-#
-738002GUY GTT + Do More"GTT+
+&
+738002One Communication"OneComm
 
 738040ENet"ENet
 
@@ -1626,8 +1655,6 @@ TelkomSA-R"Telkom-R
 
 90114
 AeroMobile"AeroMob
-
-90115OnAir"OnAir
 "
 90119epic maritime"epic mar
 
@@ -1649,4 +1676,4 @@ AeroMobile"AeroMob
 
 90171Tampnet"Tampnet
 $
-90198Skylo Technologies"Skylo&Published TS.25 Database 10 March 2025
+90198Skylo Technologies"Skylo%Published TS.25 Database 30 June 2025
