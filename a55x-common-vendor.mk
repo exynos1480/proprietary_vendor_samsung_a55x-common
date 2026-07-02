@@ -370,6 +370,7 @@ PRODUCT_PACKAGES += \
     libvpl \
     libwrappergps \
     nfc_nci_sec \
+    sensors.inputvirtual \
     sensors.sensorhub \
     libaudioeffectoffload \
     libmyspace \
