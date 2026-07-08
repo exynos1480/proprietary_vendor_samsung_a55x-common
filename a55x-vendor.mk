@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/a55x/proprietary/vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid0.xml \
     vendor/samsung/a55x/proprietary/vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid1.xml \
     vendor/samsung/a55x/proprietary/vendor/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dqe/calib_data_colormode0_s6e3fc5_a55x_vivid2.xml \
+    vendor/samsung/a55x/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
     vendor/samsung/a55x/proprietary/vendor/etc/gnss/ca.pem:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/ca.pem \
     vendor/samsung/a55x/proprietary/vendor/etc/gnss/gps.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cfg \
     vendor/samsung/a55x/proprietary/vendor/etc/gnss/gps.dcm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.dcm.cfg \
